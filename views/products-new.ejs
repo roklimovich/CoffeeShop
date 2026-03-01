@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison du Café - Add Product</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="brand">
+        <h1>Maison du Café</h1>
+    </div>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+    <div class="hero" role="img" aria-label="Coffee beans background"></div>
+</header>
+
+<main>
+    <div class="auth-container">
+        <div class="auth-box glass">
+            <h2>Add new product</h2>
+            <form class="auth-form" action="/add-product" method="POST">
+
+                <label for="name">Product name</label>
+                <input type="text" id="name" name="name" placeholder="e.g., Cappuccino" required>
+
+                <label for="price">Price ($)</label>
+                <input type="number" step="0.01" id="price" name="price" placeholder="e.g., 4.50" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="e.g., Velvety foam with rich espresso" required></textarea>
+
+                <label for="imageUrl">Image URL</label>
+                <input type="url" id="imageUrl" name="imageUrl" placeholder="Optional: paste image URL">
+
+                <button type="submit" class="auth-btn">Create product</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>© 2025 Maison du Café • Grodno• <a href="/contact">Contact</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison du Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header with existing design -->
+        <header class="site-header">
+            <div class="brand">
+                <h1>Maison du Café</h1>
+            </div>
+            <nav class="top-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#/home" data-route="home">Home</a></li>
+                    <li><a href="#/menu" data-route="menu">Menu</a></li>
+                    <li><a href="#/cart" data-route="cart" class="auth-required">Cart <span id="cartBadge" style="display: none; background: #dc3545; color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.8em; margin-left: 5px;"></span></a></li>
+                    <li><a href="#/orders" data-route="orders" class="auth-required" style="display: none;">Orders</a></li>
+                    <li><a href="#/login" data-route="login" class="guest-only">Login</a></li>
+                    <li class="auth-required" style="display: none;"><span class="user-info" id="userInfo"></span></li>
+                    <li class="auth-required" style="display: none;"><button id="logoutBtn" type="button">Logout</button></li>
+                </ul>
+            </nav>
+            <div class="lang-selector" style="position: absolute; top: 60px; right: 20px; display: flex; gap: 5px;">
+                <button id="langEn" style="padding: 5px 10px; border: 1px solid rgba(255,255,255,0.5); background: rgba(255,255,255,0.1); color: white; border-radius: 4px; cursor: pointer;">EN</button>
+                <button id="langPl" style="padding: 5px 10px; border: 1px solid rgba(255,255,255,0.5); background: rgba(255,255,255,0.1); color: white; border-radius: 4px; cursor: pointer;">PL</button>
+            </div>
+            <div class="hero" role="img" aria-label="Coffee beans background"></div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content" id="mainContent">
+            <!-- Content will be dynamically loaded here -->
+        </main>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>© 2025 Maison du Café • Warsaw • <a href="/contact">Contact</a></p>
+        </footer>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/components/products.js"></script>
+    <script src="js/components/cart.js"></script>
+    <script src="js/components/orders.js"></script>
+    <script src="js/components/auth.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
