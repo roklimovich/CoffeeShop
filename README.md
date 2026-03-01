@@ -3,21 +3,15 @@
 A full-stack web application for managing a coffee shop's products and orders, built with Node.js/Express backend and a Single Page Application (SPA) frontend.
 
 ## Features
-
-### Level 1 Requirements ✅
 - **Database**: 4 connected tables (Users, Products, Orders, OrderItems) with many-to-many relationship
 - **Column Types**: Multiple types including INT, VARCHAR, TEXT, DECIMAL, ENUM, TIMESTAMP
 - **CRUD Operations**: Full Create, Read, Update, Delete for all entities
 - **List Views**: Paginated lists showing important columns
 - **Detail Views**: Complete information including related records
 - **Validation**: Both client-side and server-side validation
-
-### Level 2 Requirements ✅
 - **Authentication**: User registration and login with JWT tokens
 - **Role-based Access**: Different functionalities for logged-in users vs guests
 - **Pagination**: All list views support pagination
-
-### Level 3 Requirements ✅
 - **Single Page Application**: Built as SPA with client-side routing
 - **Multiple User Roles**: Guest, Customer, Manager, Admin (4 roles)
 - **Resource-level Permissions**: Customers can only view their own orders; managers/admins can view all
