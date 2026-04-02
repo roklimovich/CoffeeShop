@@ -1,4 +1,4 @@
-# Coffee Shop Management System
+# Maison-Du-Cafe
 
 A full-stack web application for managing a coffee shop's products and orders, built with Node.js/Express backend and a Single Page Application (SPA) frontend.
 
